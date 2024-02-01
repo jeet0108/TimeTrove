@@ -1,0 +1,69 @@
+.hero{
+    height: 90vh;
+    background-image: url('../Assets/hero_image.png');
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 175px; 
+}
+
+.title {
+    color: black;
+    font-size: 24px;
+    font-family: 'Junge';
+    font-weight: 400;
+    word-wrap: break-word;
+    
+}
+
+.subtitle {
+    color: black;
+    font-size: 68px;
+    font-family: 'Junge';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.description {
+    color: black;
+    font-size: 24px;
+    font-family: 'Junge';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.separator {
+    width: 200px;
+    height: 35px;
+    background: #4A4A4A;
+    border-radius: 36px;
+}
+
+.latest-collection {
+    color: white;
+    font-size: 20px;
+    font-family: 'Junge';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.latest-collection-button {
+    background-color: #4A4A4A;
+    color: white;
+    font-family: 'Junge';
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
