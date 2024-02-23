@@ -5,7 +5,9 @@
     align-items: center;
     gap: 50px;
 }
-
+a{
+    text-decoration: none;
+}
 .footer-logo {
     display: flex;
     align-items: center;

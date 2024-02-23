@@ -11,6 +11,11 @@ import men_banner from "./Components/Assets/banner_mens.png";
 import women_banner from "./Components/Assets/banner_women.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 import Company from './Pages/Company';
+import about from './Pages/About';
+import About from './Pages/About';
+import Offices from './Pages/Offices';
+import Products from './Pages/Products';
+
 function App() {
   return (
     <div>
@@ -36,6 +41,9 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<LoginSignup />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/Offices" element={<Offices/>} />
+        <Route path="/Products" element={<Products/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

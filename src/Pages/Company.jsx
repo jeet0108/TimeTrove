@@ -4,22 +4,20 @@ import "./CSS/Company.css"
 
 const Company = () => {
     return(
-        <div className="company-container" style={{width:'100%'}}>
-            <div>
-                <h1>Company information </h1>
-            </div>
+        <div className="company-container">
             <div className="details">
-                <div>
-                    <h3>Company Name : TimeTrove</h3>
-                    <h3>Owner Name : Jeet Sabhadiya</h3>
-                    <h3>Address : RKU, Rajkot, India</h3>
-                    <h3>Location : Rajkot India</h3>
-                    <h3>Email : timetrove@gmail.com</h3>
-                </div>
+            <div class="company-info">
+                <h1 class="h1">Company Information</h1>
+                <p><span>Company Name:</span> TimeTrove</p>
+                <p><span>Owner Name:</span> Jeet Sabhadiya</p>
+                <p><span>Address:</span> RKU, Rajkot, India</p>
+                <p><span>Location:</span> Rajkot, India</p>
+                <p><span>Email:</span> timetrove@gmail.com</p>
+             </div>
+            </div>
                 <div className="threepic">
                     <img src={threepic} alt="" />
                 </div>
-            </div>
 
         </div>
     )
