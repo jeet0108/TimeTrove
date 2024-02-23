@@ -72,3 +72,7 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.footer-logo img{
+    padding-top: 15px;
+}

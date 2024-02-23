@@ -14,10 +14,12 @@ const Navbar = () => {
         menuRef.current.classList.toggle('nav-menu-visible');
         e.target.classList.toggle('open');
     }
+
+    
     return (
         <div className="navbar"> 
             <div className="nav-logo">
-                <img src={logo} alt="nav-logo" />
+                {/* <img src={logo} alt="nav-logo" /> */}
                 <p>TimeTrove</p>
             </div>
             <img className="nav-dropdown" onClick={dropdown_toggle} src={nav_dropdown} alt="" />

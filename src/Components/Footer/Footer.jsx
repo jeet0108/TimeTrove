@@ -7,7 +7,7 @@ import x_icon from "../Assets/x_icon.png";
 import facebook_icon from "../Assets/facebook_icon.png";
 import instagram_icon from "../Assets/instagram_icon.png";
 import whatsapp_icon from "../Assets/whatsapp_icon.png";
-
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer">
@@ -16,7 +16,7 @@ const Footer = () => {
                 <p>TimeTrove</p>
             </div>
             <ul className="footer-links">
-                <li>Company</li>
+                <li><NavLink to={'/company'}>Company</NavLink></li>
                 <li>Products</li>
                 <li>Offices</li>
                 <li>About</li>

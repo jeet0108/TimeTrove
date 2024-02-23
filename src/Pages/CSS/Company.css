@@ -1,0 +1,19 @@
+.company-container{
+    font-family: Judson;
+}
+
+.threepic{
+    display: flex;
+    top: 178px;
+    width: 100%;
+    height: 690px;
+    left: 890px;
+
+
+}
+
+.details{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
