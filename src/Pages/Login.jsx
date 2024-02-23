@@ -1,19 +1,20 @@
 import React from "react";
-import "./CSS/LoginSignup.css";
+import "./CSS/Login.css";
+import { NavLink } from "react-router-dom";
 
-const LoginSignup = () => {
+const Login = () => {
     return (
         <div className="loginsignup">
             <div className="loginsignup-container">
-                <h1>Sign Up</h1>
+                <h1>Login</h1>
                 <div className="loginsignup-fields">
-                    <input type="text" placeholder="Your Name" />
+                    {/* <input type="text" placeholder="Your Name" /> */}
                     <input type="email" placeholder="Email Address" />
                     <input type="password" placeholder="Password" />
                 </div>
                 <button>Continue</button>
                 <p className="loginsignup-login">
-                    Already have an account <span>Login here</span>
+                    Create new account - <span><NavLink to={"/Signin"}>Sign in</NavLink></span>
                 </p>
                 <div className="loginsignup-agree">
                     <input type="checkbox" name="" id="" />
@@ -24,4 +25,4 @@ const LoginSignup = () => {
     );
 };
 
-export default LoginSignup;
+export default Login;

@@ -5,16 +5,17 @@ import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
-import LoginSignup from './Pages/LoginSignup';
+import LoginSignup from './Pages/Login';
 import Footer from './Components/Footer/Footer';
 import men_banner from "./Components/Assets/banner_mens.png";
 import women_banner from "./Components/Assets/banner_women.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 import Company from './Pages/Company';
-import about from './Pages/About';
 import About from './Pages/About';
 import Offices from './Pages/Offices';
 import Products from './Pages/Products';
+import Signin from './Pages/Signin';
+
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/Offices" element={<Offices/>} />
         <Route path="/Products" element={<Products/>} />
+        <Route path="/Signin" element={<Signin/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
