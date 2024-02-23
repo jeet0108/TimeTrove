@@ -1,15 +1,15 @@
 .newsletter {
-    width: 65%;
+    width: 100%;
     height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
     background: linear-gradient(263deg, #FFF 4.62%, #828282 94.61%);
     gap: 30px;
+    overflow: hidden;
 }
 
 .newsletter h1 {

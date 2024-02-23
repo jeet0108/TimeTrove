@@ -1,7 +1,9 @@
 .item {
-    width: 350px;
+    width: 280px;
 }
-
+.item img{
+    width: 280px;
+}
 .item p {
     color: black;
     font-family: Junge;

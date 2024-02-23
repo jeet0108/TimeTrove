@@ -4,7 +4,7 @@ import offers1 from "../Assets/offers1.png";
 
 const Offers = () => {
     return (
-        <div className="offers">
+        <div className="offers ov-h">
             <div className="offers-left">
                 <h1>Exclusive</h1>
                 <h1>Offers For You</h1>

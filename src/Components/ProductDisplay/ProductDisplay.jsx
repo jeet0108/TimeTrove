@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import "./ProductDisplay.css";
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
@@ -7,6 +7,12 @@ import { ShopContext } from "../../Context/ShopContext";
 const ProductDisplay = (props) => {
   const { product } = props;
   const { addToCart } = useContext(ShopContext);
+  const [rating, setRating] = useState(0);
+
+  const handleStarClick = (index) => {
+    setRating(index + 1);
+  };
+
   return (
     <div className="productdisplay">
       <div className="productdisplay-left">
@@ -20,7 +26,7 @@ const ProductDisplay = (props) => {
           <img className="productdisplay-main-img" src={product.image} alt="" />
         </div>
       </div>
-      <div className="productdisplay-right">
+      {/* <div className="productdisplay-right">
         <h1>{product.name}</h1>
         <div className="productdisplay-right-stars">
           <img src={star_icon} alt="" />
@@ -28,6 +34,19 @@ const ProductDisplay = (props) => {
           <img src={star_icon} alt="" />
           <img src={star_icon} alt="" />
           <img src={star_dull_icon} alt="" />
+          <p>(122)</p>
+        </div> */}
+        <div className="productdisplay-right">
+        <h1>{product.name}</h1>
+        <div className="productdisplay-right-stars">
+          {[...Array(5)].map((_, index) => (
+            <img
+              key={index}
+              src={index < rating ? star_icon : star_dull_icon}
+              alt=""
+              onClick={() => handleStarClick(index)}
+            />
+          ))}
           <p>(122)</p>
         </div>
         <div className="productdisplay-right-prices">
@@ -62,7 +81,7 @@ const ProductDisplay = (props) => {
         </button>
         <p className="productdisplay-right-category">
           <span>Category : </span>
-          Women, T-shirt, Crop Top
+          Women
         </p>
         <p className="productdisplay-right-category">
           <span>Tags : </span>

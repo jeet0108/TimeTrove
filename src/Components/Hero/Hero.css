@@ -1,20 +1,20 @@
 .hero{
     height: 90vh;
-    background-image: url('../Assets/hero_image.png');
-    display: flex;
-    justify-content: space-around;
+    /* background: url('../Assets/hero_image.png'); */
+    background: linear-gradient(180deg, #FFFFFF, #828282, 100%);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    width: 100%;
 }
 
 
-.hero-right {
-    flex: 1;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
+.hero-left {
+    float: left;
     padding-left: 175px; 
+    height: auto;
+    align-self: center;
+    width: 100%;
 }
 
 .title {
@@ -42,13 +42,6 @@
     word-wrap: break-word;
 }
 
-.separator {
-    width: 200px;
-    height: 35px;
-    background: #4A4A4A;
-    border-radius: 36px;
-}
-
 .latest-collection {
     color: white;
     font-size: 20px;
@@ -66,4 +59,11 @@
     border: none;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
